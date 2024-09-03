@@ -1,0 +1,10 @@
+#!/bin/bash
+
+NETWORK_NAME=traefik
+
+# shellcheck disable=SC2046
+if [ -z $(docker network ls --filter name=^${NETWORK_NAME}$ --format="{{ .Name }}") ] ; then
+     docker network create ${NETWORK_NAME} ;
+fi
+
+docker-compose up -d

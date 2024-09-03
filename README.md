@@ -18,3 +18,5 @@ test:
 ![](./doc/traefik_dashboard.png)
 
 - https://whoami.localhost
+
+![](./doc/whoami.png)

@@ -1,0 +1,10 @@
+tls:
+  certificates:
+    - certFile: "/etc/certs/localhost.pem"
+      keyFile: "/etc/certs/localhost-key.pem"
+
+    - certFile: "/etc/certs/_wildcard.localhost.pem"
+      keyFile: "/etc/certs/_wildcard.localhost-key.pem"
+
+    - certFile: "/etc/certs/traefik.localhost.pem"
+      keyFile: "/etc/certs/traefik.localhost-key.pem"
